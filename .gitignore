@@ -1,0 +1,6 @@
+# build output - nothing compiled belongs in the repo
+bin/
+obj/
+*.user
+*.suo
+.vs/
