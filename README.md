@@ -7,6 +7,11 @@ for GTA V / LSPDFR.
 Current release: **builder 1.1**, shipped in Gunsmith 2.0. The builder itself is unchanged since
 Gunsmith 1.1 — 2.0 is a plugin update and does not alter how attachments are unlocked.
 
+**The built tool:** [`release/GunsmithUnlockBuilder-1.1.exe`](release/GunsmithUnlockBuilder-1.1.exe)
+— the same file that ships inside the Gunsmith download, with its SHA-256 published in
+[release/README.md](release/README.md) so either copy can be checked. You do not need it to run
+Gunsmith; it is optional.
+
 It is published here so anyone can read exactly what it does before running it — including
 LCPDFR staff, who ask for the source of any executable hosted on the site.
 

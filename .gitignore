@@ -1,4 +1,5 @@
-# build output - nothing compiled belongs in the repo
+# build output - whatever a dev build last produced does not belong in the repo.
+# (release/ is different: a deliberate, versioned, hash-documented binary. See release/README.md.)
 bin/
 obj/
 *.user
