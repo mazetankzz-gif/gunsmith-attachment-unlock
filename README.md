@@ -1,7 +1,11 @@
 # Gunsmith Attachment Unlock — builder
 
 The source for `GunsmithUnlockBuilder.exe`, the optional tool that ships alongside
-[Gunsmith – Station Armory](https://www.lcpdfr.com/) for GTA V / LSPDFR.
+[Gunsmith – Station Armory](https://www.lcpdfr.com/downloads/gta5mods/scripts/55489-gunsmith/)
+for GTA V / LSPDFR.
+
+Current release: **builder 1.1**, shipped in Gunsmith 2.0. The builder itself is unchanged since
+Gunsmith 1.1 — 2.0 is a plugin update and does not alter how attachments are unlocked.
 
 It is published here so anyone can read exactly what it does before running it — including
 LCPDFR staff, who ask for the source of any executable hosted on the site.
@@ -52,6 +56,17 @@ dotnet build src/GunsmithUnlockBuilder/AttachmentUnlock.csproj -c Release
 
 `src/BuilderTests` is a self-contained check suite that runs the builder against a real game
 folder and verifies the output — no game launch required.
+
+## Writing a plugin that talks to Gunsmith
+
+Unrelated to this tool, but this is where people look. Gunsmith 2.0 exposes an **Open Armory**
+API so another LSPDFR plugin can file its own shootout and have ballistics close it months
+later, or ask whether the officer is qualified on what they are carrying, how many rounds they
+have fired this shift, or whether they are on restricted duty.
+
+It is reflection-only: one drop-in file, no reference to `Gunsmith.dll`, and your plugin keeps
+working when Gunsmith is not installed. The kit — `GunsmithBridge.cs` and `MODDER_API.md` — is
+folder 4 of the Gunsmith download.
 
 ## Licence
 
